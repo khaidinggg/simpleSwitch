@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>JavaScript in Body</h2>
+<br>
+<button id="demo" onclick="buttonclick()">Turn On</button>
+<br>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<br>
+<img id="myImage1" src="pic_bulboff.gif" onclick="imageclick()" style="width:100px">
+<br>
+<p id="demo1" style="display:none" >Turn On</p>
+</center>
+<script>
+function buttonclick(){
+if (document.getElementById("demo").innerHTML != "Turn Off") {
+  document.getElementById("demo").innerHTML = "Turn Off";
+  document.getElementById('myImage').src='pic_bulbon.gif'
+} else {
+  document.getElementById("demo").innerHTML = "Turn On";
+  document.getElementById('myImage').src='pic_bulboff.gif'
+}
+
+}
+
+function imageclick(){
+if (document.getElementById("demo1").innerHTML != "Turn Off") {
+  document.getElementById("demo1").innerHTML = "Turn Off";
+  document.getElementById('myImage1').src='pic_bulbon.gif'
+} else {
+  document.getElementById("demo1").innerHTML = "Turn On";
+  document.getElementById('myImage1').src='pic_bulboff.gif'
+}
+}
+</script>
+
+</body>
+</html> 
